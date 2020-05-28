@@ -1,5 +1,5 @@
 body {
-	margin: auto 0;
+	margin: auto 0; /*extends body to the full page (browser have default css attached that causes spaces on the sides) */
 }
 
 .zone {
@@ -24,13 +24,21 @@ body {
 /* NAV */
 .main-nav {
 	display: flex;
-	list-style: none;
+	list-style: none; /*remove bullets*/
 	font-size: 0.7em;
 	margin: 0;
 }
 
+/*on main screen if window size is below 600px change below properties*/
+@media only screen and (max-width: 600px) {
+	.main-nav {
+		font size: 0.5em;
+		padding: 0;
+	}
+}
+
 .push {
-	margin-left: auto;
+	margin-left: auto; /*adds margins on the left so that the li element is pushed to the right edge*/
 }
 
 li {
@@ -39,8 +47,17 @@ li {
 
 a {
 	color: #F5F5F6;
-	text-decoration: none;
+	text-decoration: none; /*remove underlines of the links*/
 }
+
+/* COVER */
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50vh; /*viewpoint height as % */
+}
+
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
