@@ -1,6 +1,10 @@
+body {
+	margin: auto 0;
+}
+
 .zone {
-	padding: 30px 50px;
-	margin: 30px 50px;
+/*	padding: 30px 50px;
+	margin: 30px 50px;*/
 	cursor: pointer;
 	/*display: inline-block;*/
 	color: #FFF;
@@ -15,6 +19,27 @@
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/* NAV */
+.main-nav {
+	display: flex;
+	list-style: none;
+	font-size: 0.7em;
+	margin: 0;
+}
+
+.push {
+	margin-left: auto;
+}
+
+li {
+	padding: 20px;
+}
+
+a {
+	color: #F5F5F6;
+	text-decoration: none;
 }
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
