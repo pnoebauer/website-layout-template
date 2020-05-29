@@ -1,5 +1,6 @@
 body {
 	margin: auto 0; /*extends body to the full page (browser have default css attached that causes spaces on the sides) */
+    font-family: Arial;
 }
 
 .zone {
@@ -50,12 +51,27 @@ a {
 	text-decoration: none; /*remove underlines of the links*/
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
 /* COVER */
 .container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 50vh; /*viewpoint height as % */
+	height: 70vh; /*viewpoint height as % */
+}
+
+.cover {
+    width: 30rem;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* GRID */
@@ -66,16 +82,24 @@ a {
 }
 
 /*all children of box that are images*/
+.box {
+    background-color: #444;
+    padding: 130px;
+    margin: 20px; 
+}
+
 .box > img {
 	width: 100%; /*linked images are changed to fill 100% of enclosing box*/
 }
 
-.box {
-	background-color: #444;
-	padding: 130px;
-	margin: 20px; 
+.box:hover {
+    -webkit-transform:rotate(-7deg);
+    -moz-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    transform:rotate(-7deg);
 }
 
+/* Footer */
 footer {
 	text-align: center;
 }
